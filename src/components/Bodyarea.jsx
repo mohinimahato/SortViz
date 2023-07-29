@@ -1,4 +1,4 @@
-import Code from "../images/Code.png";
+// import Code from "../assets/images/Code.png";
 
 const Bodyarea = () => {
   return (
@@ -39,7 +39,7 @@ const Bodyarea = () => {
             </div>
           </div>
 
-          <div className="footer col-md-6 mx-auto d-none d-md-block">
+          {/* <div className="footer col-md-6 mx-auto d-none d-md-block">
             <div className="col-md-12">
               <div className="text-center col-md-8 mx-auto creditText">
                 Made with
@@ -49,7 +49,7 @@ const Bodyarea = () => {
                 by <link>Mohini Mahato</link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
