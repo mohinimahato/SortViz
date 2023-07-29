@@ -1,17 +1,21 @@
 import viteLogo from '/vite.svg'
+import Header from "./components/Header";
 import './App.css'
 
 function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-     
+   
+    <div className="col-12 col-md-12">
+      <Header />
+      <div className="col-md-12 d-flex justify-content-around">
+        {/* <Sidebar className="my-auto " /> */}
+        {/* <Bodyarea className="my-auto" /> */}
       </div>
-      <h1>SortViz</h1>
-    </>
+      {/* <FooterMob className="my-auto" /> */}
+    </div>
+    
+    
+   
   )
 }
 

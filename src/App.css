@@ -1,42 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Syne:wght@400;500;600;700&display=swap');
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/*-----------------------Desktop--------------------- */
+@media(min-width:768px) {
+  body {
+    overflow-y: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Header CSS Start */
+  .headerArea {
+    background: #011936;
+  }
+
+  .appTitle {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: -0.24px;
+    color: #F4FFFD;
+  }
+
+  .appTitle img {
+    display: none;
+  }
+
+  .headerOperationBtn {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  .headerOperationBtn img {
+    width: 20px;
+    margin-left: 2%;
+  }
+
+  /* Header CSS End */
+  /*SideNav CSS Start*/
+  .sideNavBg {
+    background: #011936;
+    height: 92vh;
+    overflow-y: hidden;
+  }
+
+  .sideNavDiv {
+    display: block !important;
+  }
+
+  .sortingTabs {
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  /*SideNav CSS End*/
+  /* Body css start */
+  .arrayCard {
+    background: #FFFFFF;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+
+  .algorithmName {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #000000;
+
+  }
+
+  .arrayInput {
+    width: 50px;
+    height: 50px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    /* line-height: 28px; */
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+    /* letter-spacing: -0.24px; */
+    color: #000000;
+    background: #F4FFFD;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: .5%;
+  }
+
+  .arrayComparison {
+    background: #ED254E !important;
+    border-radius: 10px !important;
+    color: white !important;
+    border: 2px dotted white;
+
+    animation: rotate 1s linear infinite;
+  }
+
+  .arraySwitch {
+    background: #F9DC5C !important;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 10px;
+  }
+
+  .arrayUpdated {
+    background: #237A57;
+    color: white !important;
+  }
+
+  .statsTitle {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #000000;
+  }
+
+  .statsInfo {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #000000;
+  }
+
+  .creditText {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+
+  }
+
+  .footer {
+    position: fixed;
+    left: 35%;
+    bottom: 0;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+
+  .footer img {
+    width: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .mobileFooterTabs {
+
+    display: none !important;
+  }
+
+  .footerDiv {
+    display: none;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/*----------------Mobile----------------------*/
+@media(max-width:767px) {
+
+
+  /* Header CSS Start */
+  .headerArea {
+    background: #011936;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .appTitle {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 46px;
+    letter-spacing: -0.24px;
+    color: #F4FFFD;
+  }
 
-.read-the-docs {
-  color: #888;
+  .headerOperationBtn {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  /*SideNav CSS Start*/
+  .sideNavBg {
+    background: #011936;
+    height: 92vh;
+    overflow-y: hidden;
+  }
+
+
+
+  .sortingTabs {
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #000000;
+  }
+
+  /*SideNav CSS End*/
+  /* Body css start */
+  .arrayCard {
+    background: #FFFFFF;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+
+
+  .offcanvas {
+    background: #011936;
+    box-shadow: -4px 3px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+  .sideNavDiv {
+    display: none;
+  }
+
+  .offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    visibility: hidden;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform .3s ease-in-out;
+    border-radius: 0px 4px 10px 0px;
+  }
+
+  .sortingTabs {
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #000000;
+  }
+
+  .btn-close {
+    margin-left: 90%;
+    color: #FFFFFF;
+    background: transparent url(./images/Cross.png) center/1em auto no-repeat;
+  }
+
+  .algorithmName {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #000000;
+
+  }
+
+  .arrayInput {
+    width: 30px;
+    height: 30px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 28px; */
+    /* display: flex;
+align-items: center; */
+    text-align: center;
+    /* letter-spacing: -0.24px; */
+    color: #000000;
+    background: #F4FFFD;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: .5%;
+  }
+
+  .statsTitle {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #000000;
+  }
+
+  .statsInfo {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #000000;
+  }
+
+  .mobileFooterTabs {
+    background: #011936;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  .headerOperationBtn img {
+    width: 24px;
+    /* margin-left: 2%; */
+
+
+  }
+
+  .headerOperationBtn {}
+
+  .tab_Active {
+
+    background: #465362 !important;
+    color: white !important;
+  }
+
+  .arrayComparison {
+    background: #ED254E !important;
+    border-radius: 10px !important;
+    color: white !important;
+    border: 2px dotted white;
+
+    animation: rotate 1s linear infinite;
+  }
+
+  .arraySwitch {
+    background: #F9DC5C !important;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 10px;
+  }
+
+  .arrayUpdated {
+    background: #237A57;
+    color: white !important;
+  }
+
+  .footerDiv {
+    background: #011936;
+    position: absolute;
+    margin: 35% auto;
+    text-align: center;
+
+  }
 }
