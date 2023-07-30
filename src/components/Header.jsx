@@ -2,23 +2,30 @@ import GenerateArray from "../assets/images/GenerateArray.png";
 import Pause from "../assets/images/Pause.png";
 import Play from "../assets/images/Play.png";
 import NavbarMob from "../assets/images/NavbarMob.png";
+import Icon from "../assets/images/Icon.png";
 const Header = () => {
   return (
     <div className="col-12">
       <div className="col-12">
         <div className="col-md-12 headerArea d-flex py-2 justify-content-between">
           <div className="col-12 col-md-3">
-            <div className="col-9 col-md-10 appTitle text-center">
+            <div className="col-5 col-md-6 appTitle text-center">
               <img
                 src={NavbarMob}
                 alt=""
-                className=" my-auto me-3"
+                className=" my-auto me-3 appImgMob"
                 type="button"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample"
               />
-              Sorting Visualizer
+              <img
+                src={Icon}
+                alt=""
+                className="my-auto me-3 appImg"
+                
+              />
+              SortViz
             </div>
           </div>
           <div className="col-md-6 d-md-flex justify-content-between  d-none ">

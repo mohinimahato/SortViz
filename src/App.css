@@ -2,6 +2,11 @@
 
 #root {
   width: 100%;
+  height: 100%;
+}
+
+.bodyWidth {
+  min-height: 100vh;
 }
 
 /*-----------------------Desktop--------------------- */
@@ -25,7 +30,11 @@
     color: #F4FFFD;
   }
 
-  .appTitle img {
+  .appImg {
+    width: 30px;
+  }
+
+  .appImgMob {
     display: none;
   }
 
@@ -154,10 +163,10 @@
   }
 
   .creditText {
-    font-family: 'Libre Baskerville';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 28px;
     text-align: center;
     color: #000000;
@@ -206,6 +215,10 @@
     line-height: 46px;
     letter-spacing: -0.24px;
     color: #F4FFFD;
+  }
+
+  .appImg {
+    display: none;
   }
 
   .headerOperationBtn {

@@ -1,6 +1,6 @@
-import GenerateArray from "../images/GenerateArray.png";
-import Pause from "../images/Pause.png";
-import Play from "../images/Play.png";
+import GenerateArray from "../assets/images/GenerateArray.png";
+import Pause from "../assets/images/Pause.png";
+import Play from "../assets/images/Play.png";
 const FooterMob = () => {
   return (
     <div>

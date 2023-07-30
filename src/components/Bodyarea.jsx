@@ -1,4 +1,4 @@
-// import Code from "../assets/images/Code.png";
+import Code from "../assets/images/Code.png";
 
 const Bodyarea = () => {
   return (
@@ -16,9 +16,11 @@ const Bodyarea = () => {
                 <span className="arrayInput arraySwitch">3</span>
                 <span className="arrayInput arrayUpdated">4</span>
                 <span className="arrayInput">5</span>
-                <span className="arrayInput">6</span>
+                <span className="arrayInput">0</span>
                 <span className="arrayInput">7</span>
-                <span className="arrayInput">8</span>
+                <span className="arrayInput">99</span>
+                <span className="arrayInput">7</span>
+                <span className="arrayInput">99</span>
               </div>
             </div>
             <div className="col-md-10 mx-auto d-flex justify-content-between mt-5 pt-md-4 mb-2">
@@ -39,17 +41,15 @@ const Bodyarea = () => {
             </div>
           </div>
 
-          {/* <div className="footer col-md-6 mx-auto d-none d-md-block">
+          <div className="footer col-md-6 mx-auto d-none d-md-block">
             <div className="col-md-12">
               <div className="text-center col-md-8 mx-auto creditText">
-                Made with
-                <span>
-                  <img src={Code} alt="" className="  my-auto" />
-                </span>
-                by <link>Mohini Mahato</link>
+                Made with ❤️ by  
+                &nbsp;
+                <a href="#" target={"_blank"}>Mohini Mahato</a>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
